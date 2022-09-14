@@ -3,36 +3,31 @@ package com.example.restservice;
 
 public class Hotel {
 
-    private Long id;
-    private String status;
-    public String name;
-    public Integer price;
-    public Integer peopleNum;
+    private Integer id;
+    public String status;
     public Integer roomNum;
+    public String name;
+    public Integer bedNum;
+    public String kindBed;
+    public Integer peopleNum;
+    public Integer price;
 
 
-    Hotel(Long id, String status){
+
+
+    Hotel(Integer id, String status){
         this.id = id;
         this.status = status;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return this.id;
     }
 
-    public String getStatus(){
-        return this.status;
-    }
-
-    public void setId(Long id){
+    public void setId(Integer id){
         this.id = id;
     }
 
-    public void setStatus(String status){
-        this.status = status;
-    }
-
-1
 
 
 }
