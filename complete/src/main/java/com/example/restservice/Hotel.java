@@ -17,6 +17,8 @@ public class Hotel {
     public Integer peopleNum;
     public Integer price;
 
+    Hotel(){}
+
 
     Hotel(Integer id, String status){
         this.id = id;
