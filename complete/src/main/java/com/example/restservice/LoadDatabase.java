@@ -50,7 +50,7 @@ public class LoadDatabase {
                         newInstanceHotel.bedNum = Integer.valueOf(delimiter.nextToken());
                         newInstanceHotel.kindBed = delimiter.nextToken();
                         newInstanceHotel.peopleNum = Integer.valueOf(delimiter.nextToken());
-                        newInstanceHotel.status = delimiter.nextToken();
+                        newInstanceHotel.setStatus(delimiter.nextToken());
                         newInstanceHotel.price = Integer.valueOf(delimiter.nextToken());
 
                     }

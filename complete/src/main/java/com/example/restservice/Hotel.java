@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Hotel {
 
     private @Id @GeneratedValue Integer id;
-    public String status;
+    private String status;
     public Integer roomNum;
     public String name;
     public Integer bedNum;
@@ -29,9 +29,17 @@ public class Hotel {
         return this.id;
     }
 
+    public String getStatus(){ return this.status;}
+
     public void setId(Integer id){
         this.id = id;
     }
+
+    public void setStatus(String status){
+        this.status = status;
+    }
+
+
     @Override
     public String toString(){
         return "Hotel id = " + id + ", name " + name + " roomNum " + roomNum +

@@ -31,21 +31,34 @@ public class HotelController {
         return repository.findAll();
     }
 
+    @GetMapping("/hotel/{id}")
+    Hotel one(@PathVariable Integer id){
+        return repository.findById(id)
+                .orElseThrow(()-> new RuntimeException());
+    }
+
     @PostMapping("hotel/list")
     Hotel newUploadHotel(@RequestBody Hotel newUploadHotel){
         return repository.save(newUploadHotel);
     }
 
-//    @PutMapping("/hotel/{id}")
-//    Hotel replaceHotel(@RequestBody Hotel newUploadHotel, @PathVariable Integer id){
-////        return repository.findById(id)
-////                .map(hotel -> {
-////                    hotel.setId(newUploadHotel.getId());
-////                    return repository.save(hotel);
-////                });
-//    }
+    @PutMapping("/hotel/{id}")
+    Hotel replaceHotel(@RequestBody Hotel newUploadHotel, @PathVariable Integer id){
+        return repository.findById(id)
+                .map(hotel -> {
+                    hotel.setId(newUploadHotel.getId());
+                    hotel.setStatus(newUploadHotel.getStatus());
+                    return repository.save(hotel);
+                }).orElseGet(() -> {
+                    newUploadHotel.setId(id);
+                    return repository.save(newUploadHotel);
+                });
+    }
 
-
+    @DeleteMapping("/hotel/{id}")
+    void deleteHotel(@PathVariable Integer id){
+        repository.deleteById(id);
+    }
 
 
 
