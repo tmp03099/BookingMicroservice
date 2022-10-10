@@ -12,14 +12,21 @@ public class Hotel {
     private String status;
     public Integer roomNum;
     public String name;
-    public Integer bedNum;
     public String kindBed;
     public Integer peopleNum;
     public Integer price;
+    public String breakfast;
+    public String tv;
+    public String pool;
+    public String bath;
+    public String laundry;
+    public String parking;
+    public boolean condition;
 
+    //create default constructor
     Hotel(){}
 
-
+    //create another constructor
     Hotel(Integer id, String status){
         this.id = id;
         this.status = status;
@@ -43,7 +50,9 @@ public class Hotel {
     @Override
     public String toString(){
         return "Hotel id = " + id + ", name " + name + " roomNum " + roomNum +
-                "bedRum " + bedNum + " kindBed " + kindBed + " status " + status;
+                " kindBed " + kindBed + " status " + status + "price " + price+
+                " breakfast "+ breakfast + " tv " + tv + " pool " + pool +
+                " bath " + bath + " laundry " + laundry + " parking " + parking ;
     }
 
 

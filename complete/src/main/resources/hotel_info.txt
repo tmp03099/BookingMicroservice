@@ -1,20 +1,20 @@
-101#Standard room#1#Queen bed#2#Empty#50
-102#Standard room#1#Queen bed#2#Empty#60
-103#Standard room#1#Queen bed#2#Empty#60
-105#Standard room#1#Queen bed#2#Empty#65
-106#Standard room#2#Queen bed#2#Empty#65
-107#Standard room#1#Queen bed#2#Empty#50
-108#Standard room#2#Queen bed#2#Empty#50
-201#Deluxe room#1#King bed#2#Full#75
-202#Deluxe room#1#King bed#2#Empty#75
-203#Deluxe room#1#King bed#2#Full#75
-205#Deluxe room#2#Queen bed#4#Empty#110
-206#Deluxe room#2#Queen bed#4#Empty#110
-207#Deluxe room#2#Queen bed#4#Empty#110
-208#Deluxe room#2#Queen bed#4#Empty#110
-301#Deluxe room#1#King bed#2#Empty#65
-302#Deluxe room#1#King bed#2#Full#65
-303#Family room#2#King bed#4#Full#170
-305#Family room#2#King bed#4#Empty#170
-306#Family room#2#Queen bed#4#Empty#170
-307#Family room#3#Queen bed#6#Empty#210
+101#Standard room#1 Queen bed#2#Empty#90
+102#Standard room#1 Queen bed#2#Empty#90
+103#Standard room#1 Queen bed#2#Empty#90
+105#Standard room#1 Queen bed#2#Empty#90
+106#Standard room#1 Queen bed#2#Empty#90
+107#Standard room#2 Queen bed#2#Empty#90
+108#Standard room#2 Queen bed#2#Empty#90
+201#Deluxe room#1 King bed#2#Full#115
+202#Deluxe room#1 King bed#2#Empty#115
+203#Deluxe room#1 King bed#2#Full#115
+205#Deluxe room#2 Queen bed#4#Empty#135
+206#Deluxe room#2 Queen bed#4#Empty#135
+207#Deluxe room#2 Queen bed#4#Empty#135
+208#Deluxe room#2 Queen bed#4#Empty#135
+301#Deluxe room#1 King bed#2#Empty#115
+302#Deluxe room#1 King bed#2#Full#115
+303#Family room#2 King bed#4#Full#170
+305#Family room#2 King bed#4#Empty#170
+306#Family room#2 Queen bed#4#Empty#170
+307#Family room#3 Queen bed#6#Empty#210

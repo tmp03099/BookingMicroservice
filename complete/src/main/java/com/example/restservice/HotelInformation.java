@@ -45,7 +45,6 @@ public class HotelInformation {
                     count++;
                     newInstanceHotel.roomNum = Integer.valueOf(delimiter.nextToken());
                     newInstanceHotel.name = delimiter.nextToken();
-                    newInstanceHotel.bedNum = Integer.valueOf(delimiter.nextToken());
                     newInstanceHotel.kindBed = delimiter.nextToken();
                     newInstanceHotel.peopleNum = Integer.valueOf(delimiter.nextToken());
                     newInstanceHotel.setStatus(delimiter.nextToken());

@@ -31,6 +31,38 @@ public class HotelController {
         return repository.findAll();
     }
 
+    //get child property in Hotel parent list
+    @GetMapping("/hotel/detail")
+    List<Hotel> newDetailHotel(){
+
+        //create detail variable to store full list of Hotel in repository
+        List<Hotel> detail = repository.findAll();
+
+        /**To get the small list that I want in Hotel list
+         * create new empty list to store value
+         * then compare and add to new list
+         */
+        List<Hotel> newList = new ArrayList<>();
+
+        //loop Hotel list to get value
+        detail.forEach((n) -> {
+            System.out.println("A: " + n);
+
+            //compare and add to newList
+            if(n.condition == true){
+                newList.add(n);
+            }
+
+        });
+
+
+        System.out.println("B: " + newList);
+        return newList;
+    }
+
+
+
+
     @GetMapping("/hotel/{id}")
     Hotel one(@PathVariable Integer id){
         return repository.findById(id)
